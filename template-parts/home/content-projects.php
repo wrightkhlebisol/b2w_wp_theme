@@ -25,7 +25,8 @@ $final_project_body = get_field('final_project_body');
                     <h3><?php the_title() ?></h3>
                     <p> <?php the_content() ?> </p>
                 </div><!-- col -->
-            <?php endwhile; ?>
+            <?php endwhile;
+            wp_reset_query() ?>
         </div><!-- row -->
 
     </div><!-- container -->

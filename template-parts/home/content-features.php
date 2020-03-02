@@ -32,7 +32,10 @@ $features_section_body = get_field('features_section_body');
                     <i class="<?php the_field('course_feature_icon'); ?>"></i>
                     <h4><?php the_title(); ?></h4>
                 </div><!-- end col -->
-            <?php endwhile; ?>
+            <?php
+            endwhile;
+            wp_reset_query();
+            ?>
 
         </div><!-- row -->
     </div><!-- container -->
