@@ -5,12 +5,12 @@
  */
 
 get_header();
-$thumbnail_url = get_the_post_thumbnail_url($post, $size)
+$thumbnail_url = get_the_post_thumbnail_url();
 ?>
 
 <!-- FEATURE IMAGE ================================ -->
 <?php if (has_post_thumbnail()) : ?>
-    <section class="feature-image" data-type="background" data-speed="2" style="background: url() no-repeat cover">
+    <section class="feature-image" data-type="background" data-speed="2" style="background-image: url('<?php echo $thumbnail_url ?>'); background-repeat: no-repeat; background-size: cover;">
         <h1>Resources</h1>
     </section>
 <?php else : ?>
@@ -20,8 +20,7 @@ $thumbnail_url = get_the_post_thumbnail_url($post, $size)
 <?php endif; ?>
 
 
-<!-- MAIN CONTENT
-	================================================== -->
+<!-- MAIN CONTENT =========================== -->
 <div class="container">
     <div class="row" id="primary">
 
