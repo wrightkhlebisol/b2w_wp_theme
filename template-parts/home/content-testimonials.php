@@ -20,8 +20,8 @@
                         <div class="col-sm-8">
                             <blockquote>
                                 <?php the_content() ?>
-                                <cite>&mdash; <?php if ($loop->has_excerpt()) : the_excerpt();
-                                                endif; ?></cite>
+                                <cite><?php if (has_excerpt()) : the_excerpt();
+                                        endif; ?></cite>
                             </blockquote>
                         </div><!-- end col -->
                     </div><!-- row -->
