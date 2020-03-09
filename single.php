@@ -32,12 +32,13 @@ get_header();
 			endwhile; // End of the loop.
 			?>
 		</main>
+		<!-- SIDEBAR
+			================================================== -->
+		<aside class="col-sm-4">
+			<?php get_sidebar(); ?>
+		</aside>
 	</div>
 </div>
 
-
-
-
 <?php
-get_sidebar();
 get_footer();
