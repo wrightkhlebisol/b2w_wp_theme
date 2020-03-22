@@ -42,7 +42,10 @@
 		</div><!-- post-image -->
 	<?php endif; ?>
 	<div class="post-excerpt">
-		<?php the_excerpt() ?>
+		<?php
+		the_excerpt();
+
+		?>
 	</div><!-- post-excerpt -->
 
 
