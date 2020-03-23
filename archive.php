@@ -10,7 +10,9 @@
 
 get_header();
 ?>
-
+<section class="feature-image feature-image-default-alt" data-type="background" data-speed="2">
+	<h1 class="page-title">Category</h1>
+</section>
 <div class="container">
 	<div class="row" id="primary">
 
